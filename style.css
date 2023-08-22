@@ -1,0 +1,296 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.hidden {
+  display: none;
+}
+
+.login-container,
+.registration-container {
+  height: 400px;
+  width: 35%;
+  min-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid;
+  z-index: 10;
+}
+.login-container-hidden,
+.registration-container-hidden {
+  display: none;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form1 h1 {
+  padding: 30px;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.input-form {
+  margin: 15px 25px;
+  text-align: center;
+  align-items: center;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+.input-form input {
+  padding: 10px;
+  width: 100%;
+  color: grey;
+  border-radius: 8px;
+
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.input-form
+  input[type="text"]
+  :focus
+  .input-form
+  input[type="password"]
+  :focus {
+  border: 1px solid #0fc3f5;
+  opacity: 0.7;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 20px;
+  width: 45%;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background: darkblue;
+  transition: 3s;
+  border-radius: 15px;
+}
+
+.input-form input[type="submit"] :hover {
+  background: rgb(56, 56, 86);
+}
+.form a {
+  display: block;
+  padding: 0 0 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.forget-password:hover {
+  transition: 2s;
+  color: gray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative; */
+  padding: 10px 20px;
+}
+.wrapper {
+  display: flex;
+  width: 36%;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.logo {
+  width: 50px;
+  align-self: flex-start;
+}
+
+.btn-loge-out {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.title {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.form-to-do-list {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.wraper {
+  display: flex;
+
+  width: 50%;
+  margin: 0 auto;
+}
+
+.for-to-do-list input {
+  padding: 20px 35px;
+  width: 70%;
+  border-radius: 1px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.task {
+  padding: 8px 20px;
+}
+
+.for-to-do-list label {
+  width: 100%;
+  display: block;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.main-blok {
+  text-align: start;
+  padding: 10px 25px;
+  border-bottom: 1px solid darkblue;
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+}
+
+.list-item {
+  border-bottom: 1px dotted grey;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.btn-loge-out,
+.add-task,
+.delete-btn,
+.register,
+.create-acount,
+.modal__btn-farther {
+  padding: 10px;
+  background: darkblue;
+  color: #fff;
+  border-radius: 10px;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.create-acount-btn {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.whole {
+  filter: blur(10px);
+}
+
+.done-btn img {
+  min-width: 20px;
+  max-width: 20px;
+}
+
+.wraper-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cross {
+  text-decoration: line-through;
+  color: green;
+}
+
+.form-register {
+  position: absolute;
+  z-index: 10;
+}
+
+.form-register input {
+  padding: 10px;
+  width: 100%;
+  color: grey;
+  border-radius: 8px;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.title-login,
+.form-registration {
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form,
+  .form-register {
+    width: 85%;
+  }
+}
