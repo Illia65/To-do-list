@@ -59,7 +59,8 @@ logeOut.addEventListener("click", () => {
   loginWindow.classList.remove("login-container-hidden");
   registrationWindow.classList.add("registration-container-hidden");
   formLogin.reset();
-  localStorage.setItem("tasks", JSON.stringify([...tasks]));
+  localStorage.setItem("tasks", JSON.stringify(...[tasks]));
+  list.innerHTML = ''
 });
 
 
