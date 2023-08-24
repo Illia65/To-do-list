@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>To Do List</title>
-  </head>
-  <body>
-    <head>
-      <!-- <div class="container"> -->
-      <div class="login-container">
-        <form action="post" class="form-login">
-          <h2 class="title-login">Log in</h2>
-          <p class="input-form">
-            <label>
-              <input
-                type="text"
-                minlength="2"
-                name="login"
-                placeholder="Enter your login"
-                minlength="3"
-                required
-              />
-            </label>
-          </p>
-          <p class="input-form">
-            <label>
-              <input
-                type="password"
-                name="password"
-                placeholder="Еnter your password"
-                minlength="6"
-                required
-              />
-            </label>
-          </p>
-          <button type="submit" class="modal__btn-farther">Sign-in</button>
-        </form>
-        <!-- <form class="form-login">
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/media.css" />
+
+		<title>To Do List</title>
+	</head>
+	<body>
+		<head>
+			<!-- <div class="container"> -->
+			<div class="login-container">
+				<form action="post" class="form-login">
+					<h2 class="title-login">Log in</h2>
+					<p class="input-form">
+						<label>
+							<input
+								type="text"
+								minlength="2"
+								name="login"
+								placeholder="Enter your login"
+								minlength="3"
+								required
+							/>
+						</label>
+					</p>
+					<p class="input-form">
+						<label>
+							<input
+								type="password"
+								name="password"
+								placeholder="Еnter your password"
+								minlength="6"
+								required
+							/>
+						</label>
+					</p>
+					<button type="submit" class="modal__btn-farther">Sign-in</button>
+				</form>
+				<!-- <form class="form-login">
           <h1>TO DO List</h1>
           <div class="input-form">
             <input class="login" type="text" placeholder="Log-in" />
@@ -51,38 +54,35 @@
             <button class="btn">Sign-in</button>
           </div>
         </form> -->
-        <a href="#" class="create-acount-btn"> <span> Create account</span> </a>
-      </div>
+				<a href="#" class="create-acount-btn"> <span> Create account</span> </a>
+			</div>
 
-      <!-- </div> -->
-    </head>
-    <main>
-      <div class="container main whole">
-        <div class="logo">
-          <img
-            src="https://www.sketchappsources.com/resources/source-image/sketch-3-todo-list-app-icon-template.png"
-            alt=""
-          />
-        </div>
-        <button class="btn-loge-out">loge out</button>
+			<!-- </div> -->
+		</head>
+		<main>
+			<div class="container main whole">
+				<div class="logo">
+					<img src="https://warwick.ac.uk/services/socialinclusion/data/dashboards/staffstudent/declarations.svg" alt="">
+				</div>
+				<button class="btn-loge-out">loge out</button>
 
-        <h2 class="title">TO DO LIST</h2>
+				<h2 class="title">TO DO LIST</h2>
 
-        <form class="form-to-do-list" action="">
-          <div class="wrap">
-            <label>
-              <input class="task" type="text" placeholder="Enter your task " />
-            </label>
-            <button class="add-task">Add task</button>
-          </div>
-        </form>
+				<form class="form-to-do-list" action="">
+					<div class="wrap">
+						<label>
+							<input class="task" type="text" placeholder="Enter your task " />
+						</label>
+						<button class="add-task">Add task</button>
+					</div>
+				</form>
 
-        <div class="wrapper">
-          <div class="main-blok">
-            <p class="sub-title">My Tasks</p>
-          </div>
-          <ol class="list">
-            <!-- <li class="list-item">
+				<div class="wrapper">
+					<div class="main-blok">
+						<p class="sub-title">My Tasks</p>
+					</div>
+					<ol class="list">
+						<!-- <li class="list-item">
               <p>купить молоко</p>
               <button class="delete-btn">delete</button>
             </li>
@@ -90,39 +90,39 @@
               <p>купить яйко</p>
               <button class="delete-btn">delete</button>
             </li> -->
-          </ol>
-        </div>
-      </div>
-      <div class="registration-container registration-container-hidden">
-        <form class="form-registration">
-          <h2 class="title-registrarion">Registration</h2>
-          <p class="input-form">
-            <label>
-              <input
-                type="text"
-                minlength="2"
-                name="login"
-                placeholder="enter your login"
-                minlength="3"
-                required
-              />
-            </label>
-          </p>
-          <p class="input-form">
-            <label>
-              <input
-                type="password"
-                name="password"
-                placeholder="enter your password"
-                minlength="6"
-                required
-              />
-            </label>
-          </p>
-          <button type="submit" class="modal__btn-farther">Log in</button>
-        </form>
-      </div>
-    </main>
-    <script src="mani.js"></script>
-  </body>
+					</ol>
+				</div>
+			</div>
+			<div class="registration-container registration-container-hidden">
+				<form class="form-registration">
+					<h2 class="title-registrarion">Registration</h2>
+					<p class="input-form">
+						<label>
+							<input
+								type="text"
+								minlength="2"
+								name="login"
+								placeholder="enter your login"
+								minlength="3"
+								required
+							/>
+						</label>
+					</p>
+					<p class="input-form">
+						<label>
+							<input
+								type="password"
+								name="password"
+								placeholder="enter your password"
+								minlength="6"
+								required
+							/>
+						</label>
+					</p>
+					<button type="submit" class="modal__btn-farther">Log in</button>
+				</form>
+			</div>
+		</main>
+		<script src="mani.js"></script>
+	</body>
 </html>
